@@ -7,11 +7,7 @@ const app = express();
 dotenv.config();
 // middleware
 app.use(express.json());
-app.use(
-  cors({
-    origin: " https://evil-goosebumps-21166.herokuapp.com/",
-  })
-);
+app.use(cors());
 
 const port = process.env.PORT || 8000;
 
